@@ -11,7 +11,7 @@ function Formulario({crearTareas}){
 
                 if(textoTemporal.trim() != ""){
 
-                    let {error} = await fetch("http://localhost:4000/tareas/nueva", {
+                    let {error} = await fetch("https://api-todo-mongo-bxk0.onrender.com/tareas/nueva", {
                         method : "POST",
                         body : JSON.stringify({ tarea : textoTemporal.trim() }),
                         headers : {
